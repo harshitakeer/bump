@@ -1,0 +1,103 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 56;
+    objects = {
+
+        /* Begin PBXProject section */
+        1D6058900D05DD3D006BFB54 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastUpgradeCheck = 1500;
+                ORGANIZATIONNAME = "Bump";
+                TargetAttributes = {
+                    1D6058940D05DD3E006BFB54 = {
+                        CreatedOnToolsVersion = 15.0;
+                    };
+                };
+            };
+            buildConfigurationList = 1D6058910D05DD3E006BFB54 /* Build configuration list for PBXProject "Bump" */;
+            compatibilityVersion = "Xcode 15.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = ( en, Base, );
+            mainGroup = 1D60588D0D05DD3D006BFB54;
+            productRefGroup = 1D6058950D05DD3E006BFB54 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                1D6058940D05DD3E006BFB54 /* Bump */,
+            );
+        };
+        /* End PBXProject section */
+
+        /* Begin PBXGroup section */
+        1D60588D0D05DD3D006BFB54 = {
+            isa = PBXGroup;
+            children = (
+                1D6058950D05DD3E006BFB54 /* Products */,
+            );
+            sourceTree = "<group>";
+        };
+        1D6058950D05DD3E006BFB54 = {
+            isa = PBXGroup;
+            name = Products;
+            children = (
+                1D6058960D05DD3E006BFB54 /* Bump.app */,
+            );
+            sourceTree = "<group>";
+        };
+        /* End PBXGroup section */
+
+        /* Begin PBXNativeTarget section */
+        1D6058940D05DD3E006BFB54 /* Bump */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 1D6058920D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Bump" */;
+            buildPhases = ();
+            buildRules = ();
+            dependencies = ();
+            name = Bump;
+            productName = Bump;
+            productReference = 1D6058960D05DD3E006BFB54 /* Bump.app */;
+            productType = "com.apple.product-type.application";
+        };
+        /* End PBXNativeTarget section */
+
+        /* Begin XCBuildConfiguration section */
+        1D6058930D05DD3E006BFB54 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; };
+            name = Debug;
+        };
+        1D6058940D05DD3E006BFB54 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; };
+            name = Release;
+        };
+        /* End XCBuildConfiguration section */
+
+        /* Begin XCConfigurationList section */
+        1D6058910D05DD3E006BFB54 /* Build configuration list for PBXProject "Bump" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                1D6058930D05DD3E006BFB54 /* Debug */,
+                1D6058940D05DD3E006BFB54 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        1D6058920D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Bump" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                1D6058930D05DD3E006BFB54 /* Debug */,
+                1D6058940D05DD3E006BFB54 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        /* End XCConfigurationList section */
+    };
+    rootObject = 1D6058900D05DD3D006BFB54 /* Project object */;
+}
+
