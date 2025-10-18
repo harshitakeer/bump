@@ -1,3 +1,10 @@
+//
+//  BumpApp.swift
+//  Bump
+//
+//  Created by Sweety on 10/18/25.
+//
+
 import SwiftUI
 
 @main
