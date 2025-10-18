@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C3EB85CF2EA41F4A00F53BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3EB85CA2EA41F4A00F53BE3 /* Assets.xcassets */; };
+		C3EB85D62EA4200B00F53BE3 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCF8A32EA41EB500DCE841 /* TabBarView.swift */; };
+		C3EB85D72EA4210600F53BE3 /* BumpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCF8A12EA41E2A00DCE841 /* BumpApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C3FCF85A2EA41CE800DCE841 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,17 +30,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C3EB85CA2EA41F4A00F53BE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3FCF84C2EA41CE700DCE841 /* Bump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FCF8592EA41CE800DCE841 /* BumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BumpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FCF8632EA41CE800DCE841 /* BumpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BumpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3FCF8A12EA41E2A00DCE841 /* BumpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumpApp.swift; sourceTree = "<group>"; };
+		C3FCF8A32EA41EB500DCE841 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C3FCF84E2EA41CE700DCE841 /* Bump */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Bump;
-			sourceTree = "<group>";
-		};
 		C3FCF85C2EA41CE800DCE841 /* BumpTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BumpTests;
@@ -78,7 +82,6 @@
 				C3FCF8A02EA41D8E00DCE841 /* BumpApp */,
 				C3FCF89B2EA41D7E00DCE841 /* Resources */,
 				C3FCF8992EA41D6F00DCE841 /* Layers */,
-				C3FCF84E2EA41CE700DCE841 /* Bump */,
 				C3FCF85C2EA41CE800DCE841 /* BumpTests */,
 				C3FCF8662EA41CE800DCE841 /* BumpUITests */,
 				C3FCF84D2EA41CE700DCE841 /* Products */,
@@ -393,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				C3FCF89A2EA41D7E00DCE841 /* {Fonts} */,
+				C3EB85CA2EA41F4A00F53BE3 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -400,6 +404,7 @@
 		C3FCF89C2EA41D8E00DCE841 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				C3FCF8A12EA41E2A00DCE841 /* BumpApp.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -414,6 +419,7 @@
 		C3FCF89E2EA41D8E00DCE841 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				C3FCF8A32EA41EB500DCE841 /* TabBarView.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -450,9 +456,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				C3FCF84E2EA41CE700DCE841 /* Bump */,
 			);
 			name = Bump;
 			packageProductDependencies = (
@@ -556,6 +559,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3EB85CF2EA41F4A00F53BE3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +584,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3EB85D62EA4200B00F53BE3 /* TabBarView.swift in Sources */,
+				C3EB85D72EA4210600F53BE3 /* BumpApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
