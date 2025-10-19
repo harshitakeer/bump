@@ -7,9 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3E4E49C2EA4580F00DAACFA /* LocationUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4E49B2EA4580C00DAACFA /* LocationUploader.swift */; };
+		C3E4E49E2EA4582400DAACFA /* ProximityChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4E49D2EA4582100DAACFA /* ProximityChecker.swift */; };
+		C3E4E4A22EA458EB00DAACFA /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = C3E4E4A12EA458EB00DAACFA /* Supabase */; };
+		C3E4E4A42EA45B7100DAACFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4E4A32EA45B6F00DAACFA /* ContentView.swift */; };
+		C3E4E4A62EA4912700DAACFA /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4E4A52EA4912400DAACFA /* NetworkingManager.swift */; };
+		C3E4E4A82EA4972600DAACFA /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4E4A72EA4972100DAACFA /* NotificationManager.swift */; };
+		C3E4E4B22EA4A5A700DAACFA /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4E4B12EA4A5A700DAACFA /* FriendsView.swift */; };
+		C3E4E4B42EA4A5AE00DAACFA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4E4B32EA4A5AE00DAACFA /* ProfileView.swift */; };
+		C3E4E4B62EA4A5B400DAACFA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4E4B52EA4A5B400DAACFA /* SettingsView.swift */; };
+		C3E4E4B82EA4A5BF00DAACFA /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4E4B72EA4A5BF00DAACFA /* SignInView.swift */; };
+		C3E4E4BA2EA4A5C800DAACFA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4E4B92EA4A5C800DAACFA /* SignUpView.swift */; };
 		C3EB85CF2EA41F4A00F53BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3EB85CA2EA41F4A00F53BE3 /* Assets.xcassets */; };
 		C3EB85D62EA4200B00F53BE3 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCF8A32EA41EB500DCE841 /* TabBarView.swift */; };
 		C3EB85D72EA4210600F53BE3 /* BumpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCF8A12EA41E2A00DCE841 /* BumpApp.swift */; };
+		C3EB86122EA42F1800F53BE3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB86112EA42F1700F53BE3 /* HomeView.swift */; };
+		C3EB86142EA42FBC00F53BE3 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB86132EA42FB900F53BE3 /* SplashView.swift */; };
+		C3EB86162EA42FF300F53BE3 /* BumpLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C3EB86152EA42FF300F53BE3 /* BumpLogo.png */; };
+		C3EB861A2EA43AB700F53BE3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB86192EA4391700F53BE3 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +45,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C3E4E49B2EA4580C00DAACFA /* LocationUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUploader.swift; sourceTree = "<group>"; };
+		C3E4E49D2EA4582100DAACFA /* ProximityChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityChecker.swift; sourceTree = "<group>"; };
+		C3E4E4A32EA45B6F00DAACFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C3E4E4A52EA4912400DAACFA /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		C3E4E4A72EA4972100DAACFA /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		C3E4E4B12EA4A5A700DAACFA /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		C3E4E4B32EA4A5AE00DAACFA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C3E4E4B52EA4A5B400DAACFA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C3E4E4B72EA4A5BF00DAACFA /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		C3E4E4B92EA4A5C800DAACFA /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		C3EB85CA2EA41F4A00F53BE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3EB86112EA42F1700F53BE3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C3EB86132EA42FB900F53BE3 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		C3EB86152EA42FF300F53BE3 /* BumpLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BumpLogo.png; sourceTree = "<group>"; };
+		C3EB86192EA4391700F53BE3 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C3EB86212EA442B800F53BE3 /* Bump-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bump-Info.plist"; sourceTree = "<group>"; };
 		C3FCF84C2EA41CE700DCE841 /* Bump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FCF8592EA41CE800DCE841 /* BumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BumpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FCF8632EA41CE800DCE841 /* BumpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BumpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E4E4A22EA458EB00DAACFA /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,14 +107,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3E4E4A02EA458EB00DAACFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3FCF8432EA41CE700DCE841 = {
 			isa = PBXGroup;
 			children = (
+				C3EB86212EA442B800F53BE3 /* Bump-Info.plist */,
 				C3FCF8A02EA41D8E00DCE841 /* BumpApp */,
 				C3FCF89B2EA41D7E00DCE841 /* Resources */,
 				C3FCF8992EA41D6F00DCE841 /* Layers */,
 				C3FCF85C2EA41CE800DCE841 /* BumpTests */,
 				C3FCF8662EA41CE800DCE841 /* BumpUITests */,
+				C3E4E4A02EA458EB00DAACFA /* Frameworks */,
 				C3FCF84D2EA41CE700DCE841 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +148,7 @@
 		C3FCF8772EA41D6F00DCE841 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				C3E4E4A52EA4912400DAACFA /* NetworkingManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -115,6 +156,10 @@
 		C3FCF8782EA41D6F00DCE841 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C3E4E4A72EA4972100DAACFA /* NotificationManager.swift */,
+				C3E4E49D2EA4582100DAACFA /* ProximityChecker.swift */,
+				C3E4E49B2EA4580C00DAACFA /* LocationUploader.swift */,
+				C3EB86192EA4391700F53BE3 /* LocationManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -397,6 +442,7 @@
 			children = (
 				C3FCF89A2EA41D7E00DCE841 /* {Fonts} */,
 				C3EB85CA2EA41F4A00F53BE3 /* Assets.xcassets */,
+				C3EB86152EA42FF300F53BE3 /* BumpLogo.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -427,6 +473,14 @@
 		C3FCF89F2EA41D8E00DCE841 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C3E4E4A32EA45B6F00DAACFA /* ContentView.swift */,
+				C3EB86132EA42FB900F53BE3 /* SplashView.swift */,
+				C3E4E4B72EA4A5BF00DAACFA /* SignInView.swift */,
+				C3E4E4B92EA4A5C800DAACFA /* SignUpView.swift */,
+				C3E4E4B32EA4A5AE00DAACFA /* ProfileView.swift */,
+				C3E4E4B12EA4A5A700DAACFA /* FriendsView.swift */,
+				C3E4E4B52EA4A5B400DAACFA /* SettingsView.swift */,
+				C3EB86112EA42F1700F53BE3 /* HomeView.swift */,
 				C3FCF89E2EA41D8E00DCE841 /* TabBar */,
 			);
 			path = Views;
@@ -459,6 +513,7 @@
 			);
 			name = Bump;
 			packageProductDependencies = (
+				C3E4E4A12EA458EB00DAACFA /* Supabase */,
 			);
 			productName = Bump;
 			productReference = C3FCF84C2EA41CE700DCE841 /* Bump.app */;
@@ -542,6 +597,9 @@
 			);
 			mainGroup = C3FCF8432EA41CE700DCE841;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C3E4E49F2EA4587700DAACFA /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C3FCF84D2EA41CE700DCE841 /* Products */;
 			projectDirPath = "";
@@ -559,6 +617,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3EB86162EA42FF300F53BE3 /* BumpLogo.png in Resources */,
 				C3EB85CF2EA41F4A00F53BE3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,8 +643,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3EB86122EA42F1800F53BE3 /* HomeView.swift in Sources */,
+				C3E4E4BA2EA4A5C800DAACFA /* SignUpView.swift in Sources */,
+				C3EB861A2EA43AB700F53BE3 /* LocationManager.swift in Sources */,
+				C3E4E4A82EA4972600DAACFA /* NotificationManager.swift in Sources */,
+				C3E4E4A42EA45B7100DAACFA /* ContentView.swift in Sources */,
+				C3E4E4B42EA4A5AE00DAACFA /* ProfileView.swift in Sources */,
+				C3E4E49C2EA4580F00DAACFA /* LocationUploader.swift in Sources */,
+				C3EB86142EA42FBC00F53BE3 /* SplashView.swift in Sources */,
 				C3EB85D62EA4200B00F53BE3 /* TabBarView.swift in Sources */,
+				C3E4E4B82EA4A5BF00DAACFA /* SignInView.swift in Sources */,
+				C3E4E4A62EA4912700DAACFA /* NetworkingManager.swift in Sources */,
+				C3E4E4B22EA4A5A700DAACFA /* FriendsView.swift in Sources */,
+				C3E4E49E2EA4582400DAACFA /* ProximityChecker.swift in Sources */,
 				C3EB85D72EA4210600F53BE3 /* BumpApp.swift in Sources */,
+				C3E4E4B62EA4A5B400DAACFA /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,15 +815,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y56QFJK272;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bump-Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We use your location to connect you with nearby friends, even in the background.\n";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -759,6 +836,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.harshita.Bump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -774,15 +852,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y56QFJK272;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bump-Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We use your location to connect you with nearby friends, even in the background.\n";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -790,6 +873,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.harshita.Bump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -920,6 +1004,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3E4E49F2EA4587700DAACFA /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3E4E4A12EA458EB00DAACFA /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3E4E49F2EA4587700DAACFA /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3FCF8442EA41CE700DCE841 /* Project object */;
 }
