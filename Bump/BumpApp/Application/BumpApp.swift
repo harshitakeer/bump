@@ -13,6 +13,12 @@ struct BumpApp: App {
     @StateObject private var uploader = LocationUploader.shared // ✅ fixed line
 
     init() {
+        // ✅ Initialize UserManager and set default phone if not already set
+        if !UserManager.shared.isLoggedIn {
+            UserManager.shared.setCurrentUser(userId: "28a76509-7bcc-439b-a7cd-4eb080da1e1f", phone: "+14258004330")
+        }
+
+        // ✅ Ask for notifications
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
             if granted {
                 print("✅ Notifications enabled")
@@ -24,11 +30,23 @@ struct BumpApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(uploader) // ✅ passes uploader to ContentView
+            TabView {
+                ContentView()
+                    .environmentObject(uploader)
+                    .tabItem {
+                        Label("Home", systemImage: "person.3")
+                    }
+
+                FriendRequestsView()
+                    .tabItem {
+                        Label("Requests", systemImage: "person.crop.circle.badge.plus")
+                    }
+            }
         }
     }
+
 }
+
 
 
 

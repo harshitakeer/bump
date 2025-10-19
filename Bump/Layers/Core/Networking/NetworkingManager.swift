@@ -10,7 +10,8 @@ import CoreLocation
 
 class NetworkingManager {
     static let shared = NetworkingManager()
-    private let baseURL = "https://unconnived-unitarily-dallas.ngrok-free.dev" // your ngrok or Render URL
+    private let baseURL = "http://MacBook-Pro-290.local:8000/send_friend_request"
+
 
     // MARK: - Add Friend
     func addFriend(userId: String, friendPhone: String, completion: @escaping (Result<String, Error>) -> Void) {

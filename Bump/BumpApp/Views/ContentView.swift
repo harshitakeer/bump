@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var uploader: LocationUploader
-    @StateObject private var locationManager = LocationManager() // 👈 Add this
 
     var body: some View {
         NavigationView {
@@ -18,15 +17,17 @@ struct ContentView: View {
                     .font(.title.bold())
 
                 if uploader.nearbyFriends.isEmpty {
-                    Text("No nearby friends yet 😔")
+                    Text("No nearby friends yet 😌")
                         .foregroundColor(.gray)
                 } else {
                     List(uploader.nearbyFriends) { friend in
-                        VStack(alignment: .leading) {
-                            Text("User: \(friend.user_id ?? "Unknown")")
-                            Text("Lat: \(friend.latitude)")
-                            Text("Lon: \(friend.longitude)")
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("👤 \(friend.user_id ?? "Unknown")")
+                                .font(.headline)
+                            Text("📏 Approx. \(Int(friend.distance ?? 0)) meters away")
+                                .foregroundColor(.secondary)
                         }
+                        .padding(.vertical, 6)
                     }
                 }
 
@@ -34,14 +35,11 @@ struct ContentView: View {
             }
             .padding()
             .navigationTitle("Bump 👋")
-            .onAppear {
-                // 👇 Hardcode your Supabase user UUID here:
-                let userId = UUID(uuidString: "062a91f2-eee6-4c2e-86fb-ec3ac3698f54")! // <- HER phone
-                uploader.startUploading(locationManager: locationManager, userId: userId)
-            }
         }
     }
 }
+
+
 
 
 

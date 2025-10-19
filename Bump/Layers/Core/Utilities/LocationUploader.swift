@@ -10,13 +10,14 @@ import Supabase
 import CoreLocation
 import Combine
 
-struct SupaFriend: Codable, Identifiable {
-    let id: Int?
+struct SupaFriend: Identifiable, Codable {
+    var id: String { user_id ?? UUID().uuidString } // ✅ SwiftUI identity
     let user_id: String?
     let latitude: Double
     let longitude: Double
-    let created_at: String?
+    let distance: Double?   // optional if you want to show “meters away”
 }
+
 
 // MARK: - Simple AnyEncodable wrapper
 struct AnyEncodable: Encodable {
@@ -36,7 +37,7 @@ struct AnyEncodable: Encodable {
         
         // ✅ Add these two stored properties
         private var timer: Timer?
-        private var lastNotifiedFriends: Set<String> = []  // prevent repeat notifications
+        private var lastNotifiedFriends: [String: Date] = [:]  // prevent repeat notifications
         private var myUserId: UUID!
 
         
@@ -98,12 +99,30 @@ struct AnyEncodable: Encodable {
                 }
 
                 // If there’s at least one new nearby friend → send a local notification
+                // Notify only once per friend every 5 minutes
                 if !nearby.isEmpty {
+                    let now = Date()
+
                     for friend in nearby {
-                        if let fid = friend.user_id {
+                        guard let fid = friend.user_id else { continue }
+
+                        let lastTime = lastNotifiedFriends[fid]
+                        let shouldNotify = (lastTime == nil || now.timeIntervalSince(lastTime!) > 300)
+
+                        if shouldNotify {
                             NotificationManager.shared.sendProximityAlert(friendId: fid)
+                            lastNotifiedFriends[fid] = now
+                            print("📲 Notified about friend \(fid)")
+                        } else {
+                            print("⏱ Skipped notifying \(fid) (too soon)")
                         }
                     }
+                }
+                
+                // 🧹 Remove anyone who’s no longer nearby from tracking
+                let nearbyIds = Set(nearby.compactMap { $0.user_id })
+                lastNotifiedFriends = lastNotifiedFriends.filter { fid, _ in
+                    nearbyIds.contains(fid)
                 }
 
                 await MainActor.run {
